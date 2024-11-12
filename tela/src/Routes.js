@@ -1,8 +1,18 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Perfil } from './pages/Perfil';
 import { Ionicons } from '@expo/vector-icons';
 import { View, Text } from 'react-native';
+
+import { Perfil } from './pages/Perfil';
+import { Anunciar } from './pages/Anunciar';
+import { CameraScreen } from './pages/Camera';
+import { ChoiseImage } from './pages/ChoiseImage';
+import { Description } from './pages/Description';
+import { Location } from './pages/Location';
+import { Namebar } from './pages/NameBar';
+import { Selectyourimage } from './pages/SelectYourImage';
+
+
 
 const Tab = createBottomTabNavigator();
 
@@ -73,7 +83,6 @@ export function Routes() {
                 }}
             />
         </Tab.Navigator>
-
     );
 }
 
